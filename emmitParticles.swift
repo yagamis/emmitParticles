@@ -10,7 +10,7 @@ func emmitParticles(from point: CGPoint, emitter: CAEmitterLayer , in rootView:U
     let originPoint = CGPoint(x: rootView.bounds.maxX, y: rootView.bounds.maxY)
     let newOriginPoint = CGPoint(x: originPoint.x / 2, y: originPoint.y / 2)
     
-    let pos = CGPoint(x: newOriginPoint.x + point.x, y: newOriginPoint.y + point.y)
+    let pos = CGPoint(x: newOriginPoint.x + point.x, y: point.y)
     let image = #imageLiteral(resourceName: "tspark")
     
     emitter.emitterPosition = pos
